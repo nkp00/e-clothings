@@ -9,7 +9,8 @@ class Directory extends Component {
       sections: [
         {
           title: "hats",
-          imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
+          //imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
+          imageUrl: "https://rb.gy/wiwnco",
           id: 1,
           linkUrl: "shop/hats",
         },
@@ -21,7 +22,7 @@ class Directory extends Component {
         },
         {
           title: "sneakers",
-          imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
+          imageUrl: "https://rb.gy/153pes",
           id: 3,
           linkUrl: "shop/sneakers",
         },
@@ -34,8 +35,9 @@ class Directory extends Component {
         },
         {
           title: "mens",
-          imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
           size: "large",
+          imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
+          //   imageUrl: "https://shorturl.at/bhtAU",
           id: 5,
           linkUrl: "shop/mens",
         },
