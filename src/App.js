@@ -1,11 +1,12 @@
 import React from "react";
 
-import "./App.css";
+import "./App.scss";
+import HomePage from "./pages/homepage";
 
 function App() {
   return (
     <div>
-      <button className="btn btn-primary">React</button>
+      <HomePage></HomePage>
     </div>
   );
 }
