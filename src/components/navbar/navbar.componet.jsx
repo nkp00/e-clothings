@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assests/crown.svg";
+import { auth } from "../../firebase/firebase.utility";
 
 import "./navbar.style.scss";
 
-class NavBar extends Component {
-  state = {};
-  render() {
+const NavBar = ({ currentUser }) => {
+  {
     return (
       <div className="header">
         <Link className="logo-container" to="/">
@@ -16,13 +16,22 @@ class NavBar extends Component {
           <Link to="/shop" className="option">
             SHOP
           </Link>
-          <Link to="/contact" className="option">
+          <Link to="/sign-in" className="option">
             CONTACT
           </Link>
+          {currentUser ? (
+            <div className="option" onClick={() => auth.signOut()}>
+              SIGN OUT
+            </div>
+          ) : (
+            <Link to="/sign-in" className="option">
+              SIGN IN
+            </Link>
+          )}
         </div>
       </div>
     );
   }
-}
+};
 
 export default NavBar;
