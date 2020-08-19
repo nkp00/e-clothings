@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./collection-item.style.scss";
 
 const CollectionItem = ({ name, price, imageUrl }) => {
